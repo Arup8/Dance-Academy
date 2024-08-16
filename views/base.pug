@@ -1,0 +1,22 @@
+//- layout.pug
+doctype html
+html
+  head
+    title Arup Dance Academy 
+    link(rel='icon', href='https://e7.pngegg.com/pngimages/342/291/png-clipart-dancesations-dance-academy-dance-studio-art-ballet-others-miscellaneous-purple.png', type='image/x-icon')
+    block scripts
+    block style
+  body
+    nav#navbar 
+        ul 
+            div#logo 
+                img(src='/static/img/logo.png')
+                | ADA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+    block content
+    footer#footer 
+        | Copyright © 2024 ArupDanceAcademy.com | All rights reserved
